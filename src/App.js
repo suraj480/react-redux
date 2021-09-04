@@ -1,10 +1,10 @@
-import Form from './container/form'
+import HomeContainer from './container/HomeContainer'
 
 function App() {
   return (
     <div className="App">
-    
-     <Form/>
+  
+<HomeContainer/>
     </div>
   );
 }
