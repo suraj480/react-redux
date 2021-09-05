@@ -7,10 +7,11 @@
 .btn-wrapper button{
 background-color: red;
 border: 0px;
-padding: 10px;
+padding: 5px;
 border-radius: 4px;
 color: #fff;
 box-shadow: #000 0px 1px 5px;
+cursor: pointer;
 }
 
 
@@ -30,4 +31,21 @@ box-shadow: #000 0px 1px 5px;
     position: absolute;
     right: 1%;
     top: 1%;
+}
+.add-to-cart span{
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    /* right: 4px; */
+    background: red;
+    padding: 11px;
+    width: 8px;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+button.remove-to-cart{
+    background-color: green;
+    margin-top: 6px;
+    padding: 8px;
 }

@@ -1,12 +1,10 @@
 import React from 'react'
 import '../styles/home.css'
-const Home=()=>{
+const Home=(props)=>{
+    console.warn(props)
     return(
         <div>
-<div className="add-to-cart">
-<img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg"/>
 
-</div>
 
             <h1>Home component</h1>
 <div className="cart-wrapper">
@@ -20,7 +18,12 @@ const Home=()=>{
 </span>
 </div>
 <div className="btn-wrapper item">
-<button>Add To Cart</button>
+<button 
+onClick={()=>props.addToCartHandler({price:1000,name:'i phone 11'})}>Add To Cart</button>
+
+<button className="remove-to-cart"
+ onClick={()=>props.removeToCartHandler()}>Remove To Cart</button>
+
 </div>
 
 </div>
